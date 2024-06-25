@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Foundation
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -42,7 +43,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   @objc func showLogs(sender: Any?) {
     NSWorkspace.shared.selectFile(
-      nil, inFileViewerRootedAtPath: "/Users/\(NSUserName())/.local/share/ersatztv/logs")
+      nil,
+      inFileViewerRootedAtPath: FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("/Library/Application Support/ersatztv/logs"))
   }
 
   func constructMenu() {
