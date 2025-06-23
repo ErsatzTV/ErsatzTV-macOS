@@ -28,7 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       try task.run()
     } catch {
       // TODO: Add system dialog and stop here. Provide instructions at a link.
-      print("Could not launch ErsatzTV. Reason: \(error)")
+      NSLog("Could not launch ErsatzTV. Reason: \(error)")
     }
   }
 
@@ -38,7 +38,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
 
   @objc func launchWebUI(sender: Any?) {
-    NSWorkspace.shared.open(NSURL(string: "http://localhost:8409")! as URL)
+    let portString = ProcessInfo.processInfo.environment["ETV_UI_PORT"]
+    NSLog("Port string is \(portString ?? "null")")
+    let port = Int(portString ?? "") ?? 8409
+    let url = "http://localhost:\(port)"
+    NSWorkspace.shared.open(NSURL(string: url)! as URL)
   }
 
   @objc func showLogs(sender: Any?) {
