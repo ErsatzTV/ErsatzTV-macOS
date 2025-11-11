@@ -10,6 +10,7 @@
 		0919395322C35C1400392D55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919395222C35C1400392D55 /* AppDelegate.swift */; };
 		0919395722C35C1400392D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0919395622C35C1400392D55 /* Assets.xcassets */; };
 		0919395A22C35C1400392D55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0919395822C35C1400392D55 /* Main.storyboard */; };
+		96A2FB372EC2D4150041A53C /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 96A2FB362EC2D4150041A53C /* AppIcon.icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,7 @@
 		0919395922C35C1400392D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0919395B22C35C1400392D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09A23D5B2468FB9B0071B5A9 /* ErsatzTV-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ErsatzTV-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A2FB362EC2D4150041A53C /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppIcon.icon; sourceTree = "<group>"; };
 		96D92E1527A3105F001C7745 /* ErsatzTV-macOS.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "ErsatzTV-macOS.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +49,7 @@
 		0919394622C35C1300392D55 = {
 			isa = PBXGroup;
 			children = (
+				96A2FB362EC2D4150041A53C /* AppIcon.icon */,
 				0919395122C35C1400392D55 /* ErsatzTV-macOS */,
 				09A23D5B2468FB9B0071B5A9 /* ErsatzTV-macOS.app */,
 			);
@@ -133,6 +136,7 @@
 			files = (
 				0919395722C35C1400392D55 /* Assets.xcassets in Resources */,
 				0919395A22C35C1400392D55 /* Main.storyboard in Resources */,
+				96A2FB372EC2D4150041A53C /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
